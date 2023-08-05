@@ -47,15 +47,15 @@ class SignupActivity : baseActivity() {
     private fun ValidateForm(name: String,email: String,password: String) : Boolean{
         return when{
             TextUtils.isEmpty(name)->{
-                showErrorSnackBar("Naam daal be")
+                showErrorSnackBar("Name please")
                 false
             }
             TextUtils.isEmpty(email)->{
-                showErrorSnackBar("email daal be")
+                showErrorSnackBar("email please")
                 false
             }
             TextUtils.isEmpty(password)->{
-                showErrorSnackBar("password daal be")
+                showErrorSnackBar("password please")
                 false
             }else -> {
                 true
